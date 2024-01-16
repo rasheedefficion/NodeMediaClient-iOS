@@ -1,5 +1,4 @@
-Pod::Spec.new do |s|
-
+Pod::Spec.new do |spec|
   s.name          = 'NodeMediaClient'
   s.version       = '2.9.8'
   s.summary       = 'A live streaming SDK.'
