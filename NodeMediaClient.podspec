@@ -5,7 +5,7 @@ Pod::Spec.new do |spec|
   s.license       = { :type => 'Copyright', :text => 'Copyright 2021 NodeMedia Ltd. All rights reserved.' }
   s.homepage      = 'http://www.nodemedia.cn'
   s.author        = { 'Mingliang Chen' => 'illuspas@gmail.com' }
-  s.source        = { :git => 'https://github.com/NodeMedia/NodeMediaClient-iOS.git', :tag => s.version }
+  s.source = { :git => 'https://github.com/ShaulLavo/NodeMediaClient-iOS.git', :tag => s.version }
   s.platform      = :ios, '9.0'
   s.source_files  = 'NodeMediaClient/NodeMediaClient.framework/Headers/*.{h}'
   s.vendored_frameworks = 'NodeMediaClient/NodeMediaClient.framework'
