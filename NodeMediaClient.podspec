@@ -1,17 +1,17 @@
 Pod::Spec.new do |spec|
-  s.name          = 'NodeMediaClient'
-  s.version       = '2.9.8'
-  s.summary       = 'A live streaming SDK.'
-  s.license       = { :type => 'Copyright', :text => 'Copyright 2021 NodeMedia Ltd. All rights reserved.' }
-  s.homepage      = 'http://www.nodemedia.cn'
-  s.author        = { 'Mingliang Chen' => 'illuspas@gmail.com' }
-  s.source = { :git => 'https://github.com/ShaulLavo/NodeMediaClient-iOS.git', :tag => s.version }
-  s.platform      = :ios, '9.0'
-  s.source_files  = 'NodeMediaClient/NodeMediaClient.framework/Headers/*.{h}'
-  s.vendored_frameworks = 'NodeMediaClient/NodeMediaClient.framework'
-  s.public_header_files = 'NodeMediaClient/NodeMediaClient.framework/Headers/NodeMediaClient.h'
-  s.libraries     = 'z'
-  s.frameworks    = 'CoreMedia','AudioToolbox','VideoToolbox','AVFoundation'
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.name          = 'NodeMediaClient'
+  spec.version       = '2.9.8'
+  spec.summary       = 'A live streaming SDK.'
+  spec.license       = { :type => 'Copyright', :text => 'Copyright 2021 NodeMedia Ltd. All rights reserved.' }
+  spec.homepage      = 'http://www.nodemedia.cn'
+  spec.author        = { 'Mingliang Chen' => 'illuspas@gmail.com' }
+  spec.source        = { :git => 'https://github.com/rasheedefficion/NodeMediaClient-iOS.git', :tag => "#{spec.version}" }
+  spec.platform      = :ios, '9.0'
+  spec.source_files  = 'NodeMediaClient/NodeMediaClient.framework/Headers/*.{h}'
+  spec.vendored_frameworks = 'NodeMediaClient/NodeMediaClient.framework'
+  spec.public_header_files = 'NodeMediaClient/NodeMediaClient.framework/Headers/NodeMediaClient.h'
+  spec.libraries     = 'z'
+  spec.frameworks    = 'CoreMedia','AudioToolbox','VideoToolbox','AVFoundation'
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 end
